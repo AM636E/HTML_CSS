@@ -1,0 +1,25 @@
+/*Portfolio*/
+
+.soft_item{
+	
+}
+
+.item_description{
+	padding-top: 5px;
+	font-size: 15px;	
+	font-style: italic;
+	color: gray;
+}
+
+.item_name{
+	padding-bottom: 1px;
+	font-size: 25px;
+	font-style: bold;
+	width: 500px;
+	height: 5px;
+}
+
+.item{	
+	width: 500px;
+	height: 25px;
+}

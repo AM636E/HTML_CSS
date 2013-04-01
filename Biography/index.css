@@ -1,0 +1,69 @@
+body{
+	margin-left: auto;
+	width: 35%;
+	margin-right: auto;
+	width: 500px;
+}
+
+#image{
+	float: left;
+}
+#image > img{
+	width: 150px;
+	height: 170px;
+}
+
+#about{
+	border: none;
+	padding-left: 10px;
+}
+
+#links{
+	width: 500px;
+	height: 100px;
+}
+
+#home{
+	float:right;
+}
+
+table{
+	border-style: solid;
+}
+
+table#about td{
+	padding: 10px;
+}
+
+th{
+	border-bottom-style: solid;
+	text-align: left;
+}
+
+td{
+	padding-left: 10px;
+	text-align: center;
+}
+
+.info_table{
+	width: 500px;
+	border-left-style: solid;
+}
+
+.value_name{
+	padding-right: 10px;
+	border-right-style: solid;
+	text-align: left;
+	width:	250px;
+}
+
+.medium{
+	color: gray;
+	font-style: italic;
+}
+
+a>img:hover {
+	width: 100px;
+	height: 100px;
+}
+
