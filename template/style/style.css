@@ -1,0 +1,72 @@
+body{
+	background-color:	#f2f2f2;
+}
+
+#header{
+	height          :   60px;
+	background-color: 	#e1e1e1;	
+	margin-left: 115px;
+	margin-right: 115px;
+}
+/*Menu*/
+#menu{
+	margin-left:    130px;
+	text-align  : 	left;
+	color       :	#989898;	
+}
+
+.menu_item{			
+	line-height: 60px;/*in the center of div*/
+	width: 150px;
+	height: 60px;	
+	
+	float: left;
+	
+}
+
+/*Separator for elements*/
+.separated{
+	text-align: center;	
+	border-right-style: solid;
+	border-color: #D0D0D0;
+}
+
+.bordered{
+	border-style: solid;
+	border-radius: 1px;
+	border-color: red;
+}
+
+/*Logo and Slogan*/
+#logo{
+	padding-top: 	90px;
+	padding-left:   115px;
+}
+#students_site{
+	
+	position: 		absolute;
+}
+#students{
+	font-size:	40px;
+	color	 :  #737373
+}
+
+#site{
+	padding-left:	120px;
+	font-size   :	25px;
+	color       :   #cecece;
+}
+
+#slogan{		
+	text-align  : 	center;
+	position    : 	absolute;
+	padding-left: 	200px;
+}
+
+#with_your_education{
+	padding-left: 50px;
+	color       : #add4e9;
+}
+
+
+
