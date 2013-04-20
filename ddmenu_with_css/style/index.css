@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.link{
+	position: absolute;
+	background: gray;
+	color: red;
+	width: 300px;
+	height: 300px;
+	line-height: 150px;
+	text-align: center;	
+	margin-bottom: 5px;
+}
+
+.link:hover{
+	background: white;
+	position: static;	
+}
+
+a{
+	text-decoration: none;		
+}
+#ddmenu{	
+	position: absolute ;
+	top: auto;
+	width: 250px;
+	height: 150px;
+	border-style: solid;
+	border-color: gray;
+}
+
+#ddmenu > a{
+	color: gray;
+}
+
+.dd{
+	color: red;
+	position: relative;	
+	margin-left: 10px;
+}
+
+.dd:hover{
+	margin-top: 10px;	
+}
