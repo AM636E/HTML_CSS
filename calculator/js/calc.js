@@ -63,7 +63,13 @@ function result()
 	
 	var result = operations[ operation ]( lvalue, rvalue );
 	
-	addValueToTextarea( "history", lvalue + operation + rvalue + "=" + result );
+	var opr = lvalue + operation + rvalue + "=" + result;
+	
+	hist.push( opr );
+	
+	addValueToTextarea( "history", opr );
+	addValueToSelect( "operations", opr );
+	
 	
     setValue( "number", result );
 }
@@ -73,4 +79,9 @@ function addValueToTextarea( textareaID, value )
 	var el = document.getElementById( textareaID );
 	
 	el.value += value + '\n';
+}
+
+function addValueToSelect( selectID, value )
+{
+	var el = document.getElementById( selectID );		
 }

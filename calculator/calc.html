@@ -7,15 +7,16 @@
 			<input type="text" name="number" id="number" /><br/>
 			<textarea id="history" readonly>
 			</textarea>
+			<select id="operations" multiple>				
+			</select>
 		</form>
 		<div id="operations">
-			<span id="plus" class="button" onClick= "getLValue('+');" >+</span>
-			<span id="minus" class="button" onClick="getLValue('-');">-</span>
-			<span id="mul" class="button" onClick=  "getLValue('*');">*</span>
-			<span id="div" class="button" onClick=  "getLValue('/');">/</span>
+			<span class="button" onClick="getLValue('+');" >+</span>
+			<span class="button" onClick="getLValue('-');">-</span>
+			<span class="button" onClick="getLValue('*');">*</span>
+			<span class="button" onClick="getLValue('/');">/</span>
 			<span class="button" onClick="result( );">=</span>
-		</div>
-		
+		</div>		
 		<script type="text/javascript" src="js/calc.js">			
 		</script>
 	</body>

@@ -1,0 +1,23 @@
+function moveLeft( elem, count )
+{
+	var curr = elem.offsetLeft;
+	var bgPos = ( curr - count ) * elem.offsetWidth / 100;
+	if( curr - count>= 0 )
+	{
+		curr -= count;
+		elem.style.left = curr + 'px';
+		elem.style.backgroundPosition = bgPos + '%' + ' ' + '0%';
+	}
+}
+
+function moveRight( elem, count )
+{
+	var curr = elem.offsetLeft;	
+	var bgPos = ( curr + count ) * elem.offsetWidth / 100;
+	if( curr + count + elem.offsetWidth < 600 )
+	{
+		curr += count;
+		elem.style.left = curr + 'px';
+		elem.style.backgroundPosition = bgPos + '%' + ' ' + '0%';
+	}
+}
