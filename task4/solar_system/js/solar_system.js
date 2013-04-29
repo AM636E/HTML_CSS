@@ -26,7 +26,7 @@ function moveElement( element, radius )
 	
 	angle -= deltaAngle;	
 }
-
+// brand
 setInterval( "moveElement( planets[ 0 ], 75 )", 100 );
 setInterval( "moveElement( planets[ 1 ], 150 )", 100 );
 setInterval( "moveElement( planets[ 2 ], 30 )", 100 );
