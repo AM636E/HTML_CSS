@@ -1,8 +1,8 @@
 var center = document.getElementById( "sun" );
 var planets = document.getElementsByClassName( "planet" );
-alert( 042 );
+
 var planetsObj = [];
-//var plnts = [];
+
 function setPlanets( elements )
 {
 	var result = [];
@@ -18,14 +18,17 @@ function setPlanets( elements )
 		{		
 			result[ i ] = new Planet( elements[ i ], elements[ i ].parentNode.offsetWidth + 10, 10 - i );
 		}
-		}
-	
+	}
+
 	return result;
 }
 
 planetsObj = setPlanets( planets );
 
-for( var i = 0; i < planetsObj.length; i ++ )
+(function( )
 {
-	setInterval( "planetsObj[ " + i + " ].MoveByCircle( )", 100 );
-}
+	for( var i = 0; i < planetsObj.length; i ++ )
+	{
+		setInterval( "planetsObj[ " + i + " ].MoveByCircle( )", 100 );
+	}
+})( );
