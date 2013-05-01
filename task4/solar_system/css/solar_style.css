@@ -1,13 +1,18 @@
+body{
+	background: gray;
+}
+
 div{
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 46%;
+	left: 49%;
 	float: left;
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
 	border-style: solid;
-	
+	text-align: center;
+	line-height: 100px;
 }
 
 #sun{
@@ -19,11 +24,13 @@ div{
 #earth{
 	background: blue;
 }
-
+#moon{ background: silver; }
+#mars{ background: red; }
 
 
 div div{
 	width: 50%;
 	height: 50%;
-	position: absolute;margin-top: 100px;
+	position: absolute;
+	line-height: 50%;
 }

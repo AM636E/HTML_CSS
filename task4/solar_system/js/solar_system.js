@@ -1,33 +1,31 @@
+var center = document.getElementById( "sun" );
 var planets = document.getElementsByClassName( "planet" );
-
-
-var angle = 0;
-var deltaAngle = Math.PI / 180;
-function show( params )
+alert( 042 );
+var planetsObj = [];
+//var plnts = [];
+function setPlanets( elements )
 {
-	var show = 0;
-	for( var i = 0; i < params.len; i ++ )
+	var result = [];
+	var radius = center.offsetWidth;
+	for( var i = 0; i < planets.length; i ++ )
 	{
-		show += params[ i ] + " ";
-	}
-	alert( show );
+		if( elements[ i ].parentNode == center )
+		{
+			result[ i ] = new Planet( elements[ i ], radius, 5 - i );
+			radius += center.offsetWidth;
+		}
+		else
+		{		
+			result[ i ] = new Planet( elements[ i ], elements[ i ].parentNode.offsetWidth + 10, 10 - i );
+		}
+		}
+	
+	return result;
 }
-function moveElement( element, radius )
+
+planetsObj = setPlanets( planets );
+
+for( var i = 0; i < planetsObj.length; i ++ )
 {
-	var parentX = element.parentNode.offsetLeft;
-	var parentY = element.parentNode.offsetTop;
-	var a = document.getElementById( "sun" );
-	
-	var x = element.parentNode.offsetWidth / 2 - 20+ radius * Math.cos( angle );
-	var y = element.parentNode.offsetHeight / 2 - 120 + radius * Math.sin( angle );
-	
-	element.style.left = x + 'px';
-	element.style.top = y + 'px';
-	
-	angle -= deltaAngle;	
+	setInterval( "planetsObj[ " + i + " ].MoveByCircle( )", 100 );
 }
-// brand
-setInterval( "moveElement( planets[ 0 ], 75 )", 100 );
-setInterval( "moveElement( planets[ 1 ], 150 )", 100 );
-setInterval( "moveElement( planets[ 2 ], 30 )", 100 );
-setInterval( "moveElement( planets[ 3 ], 300 )", 100 );
