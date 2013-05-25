@@ -1,0 +1,18 @@
+///////////////////////////////////
+function drawRadius( hDC, rAngle, cX, cY, cRadius )
+{
+	// hDC.clearRect( 0, 0, canvas.width, canvas.height );
+	// hDC.closePath( );//clear previos draw
+	
+	// hDC.beginPath( );
+
+	// var x = cX + Math.cos( rAngle ) * cRadius;//get coordinate x
+	// var y = cY + Math.sin( rAngle ) * cRadius;//get coordinate y		
+	
+	// hDC.moveTo( cX, cY );
+	// hDC.lineTo( x, y );
+	// drawCircle( hDC, x, y, 10 );
+	
+	// hDC.stroke( );
+}
+///////////////////////////////////

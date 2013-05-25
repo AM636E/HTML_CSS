@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+	<body>
+		<form>
+			<select onchange="choosenEl = new String( this.value );">
+				<option>DIV</option>
+				<option>A</option>
+				<option>P</option>
+			</select>
+			<input type="text" id="text" />
+			<input type="text" id="attr_name" />
+			<input type="text" id="attr_value" />			
+			<input type="button" value="Go!" onclick="addElement( );" />
+		</form>
+		<div id="holder" style="width: 100%; height: auto; border: solid; margin-top: 10px">
+		</div>
+		<script type="text/javascript" src="js/element_creator.js"></script>
+	</body>
+</html>
