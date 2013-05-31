@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<recipebook>	
+	<recipe name="Borsch" type="liquid" taste="2">
+		<ingredients count="infinity">
+			<ingredient type="meat"		 weight="200" freshness="fresh" required="true">Some Meat</ingredient>
+			<ingredient type="vegetable" weight="200" freshness="fresh" required="true">Beetroot </ingredient>
+			<ingredient type="liquid"	 weight="200" freshness="fresh" required="true">Water    </ingredient>
+		</ingredients>
+		<algorithm>
+			<step order="0" required="true">Get all ingredients</step>
+			<step order="1">Heat a water</step>
+			<step order="2">Cook a meat</step>
+			<step order="3">Add Beetroot</step>
+			<step order="4">Check for ingredients. If ingredients are present add and go to order 4. Else go to step order 5 </step>
+			<step order="5">Enjoy Borsch</step>
+		</algorithm>
+	</recipe>
+	<recipe name="Borsch" taste="2">
+		<ingredients count="infinity">
+			<ingredient type="meat"		 weight="200" freshness="fresh" required="true">Some Meat</ingredient>
+			<ingredient type="vegetable" weight="200" freshness="fresh" required="true">Beetroot </ingredient>
+			<ingredient type="liquid"	 weight="200" freshness="fresh" required="true">Water    </ingredient>
+		</ingredients>
+		<algorithm>
+			<step order="0" required="true">Get all ingredients</step>
+			<step order="1">Heat a water</step>
+			<step order="2">Cook a meat</step>
+			<step order="3">Add Beetroot</step>
+			<step order="4">Check for ingredients. If ingredients are present add and go to order 4. Else go to step order 5 </step>
+			<step order="5">Enjoy Borsch</step>
+		</algorithm>
+	</recipe>
+</recipebook>
